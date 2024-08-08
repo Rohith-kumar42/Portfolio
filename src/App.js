@@ -3,25 +3,67 @@ import './App.css';
 
 function App() {
   return (
+    window.addEventListener('scroll', function() {
+      // Calculate the scroll percentage
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+  
+      // Get the Nav-Content elements
+      const navContent = document.querySelector('.Nav-Content a');
+      const navContent1 = document.querySelector('.Nav-Content1 a');
+      const navContent2 = document.querySelector('.Nav-Content2 a');
+      const navContent3 = document.querySelector('.Nav-Content3 a');
+      // navContent1.addEventListener('click', function() {
+      //   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      //   const scrollTo = (scrollHeight * 15) / 100;
+      //   window.scrollTo(0, scrollTo);
+      // });
+      // Change color based on scroll percentage
+      if (scrollPercentage === 0 && scrollPercentage < 19) {
+        navContent.style.color = 'red';
+        navContent1.style.color = 'white';
+    } 
+      if (scrollPercentage > 20) {
+          navContent1.style.color = 'red';
+          navContent1.style.color = 'red';
+          navContent.style.color = 'white';
+          navContent2.style.color = 'white';
+          navContent3.style.color = 'white';
+      } 
+  
+      if (scrollPercentage > 75) {
+          navContent2.style.color = 'red';
+          navContent1.style.color = 'white';
+          navContent.style.color = 'white';
+      } 
+     if(scrollPercentage > 95){
+        navContent3.style.color = 'red';
+        navContent1.style.color = 'white';
+        navContent2.style.color = 'white';
+        navContent.style.color = 'white'; // Reset color
+    }
+  }),
+  
     <div className="App">
-      <body className="About-content">
-        <div className="Nav-header">
           <div className='Navmenu'>
           <ul>
-          <li className='Nav-Content'><a href='about.html'  style={{color:'red'}}>About</a></li>
-          <li className='Nav-Content'><a href='project.html'>Project</a></li>
-          <li className='Nav-Content'><a href='skills.html'>Skills</a></li>
-          <li className='Nav-Content'><a href='education.html'>Education</a></li>
+          <li className='Nav-Content'><a style={{color:'red'}}>About</a></li>
+       <li className='Nav-Content Nav-Content1' > <a >Project</a>  </li>
+          <li className='Nav-Content Nav-Content2'><a href='skills.html'>Skills</a></li>
+          <li className='Nav-Content Nav-Content3'><a href='education.html'>Education</a></li>
           </ul>
           </div>
+     
+        <div className="Nav-header">
         <div className="Header">
         <div style={{display:'flex',paddingRight:'120px',width:'1000px'}}>
-        <p><span style={{fontSize:'3em'}}><span style={{color:'red'}}>Rohith</span> Kumar B</span>,<br />A Front End Developer with highly interested in pursuing his career as Full Stack Developer<br />
+        <p><span style={{color:'red',fontSize:'3em'}}>Rohith Kumar B</span>,<br />A Front End Developer with highly interested in pursuing his career as Full Stack Developer<br />
         Rohith Kumar - A student who is building his career in the field of his interest .He is focused in improving his skill as much as he can and focused on what he needs. He is a focused person when it comes to things he works. 
         He likes to learn new things and gives his attention in noticing minute details in the things he works and learn. 
         The philosophy he loves to follow is do the things u like and built your career in the field of your interest.</p>
         <img src="./photo.jpeg" alt="Profile" className="profile-image" /></div>
-        <button>Download Resume</button>
+        <button class="button-36" >Download Resume</button>
       <div className='ImageSection' style={{display:'flex '}} >
         <a href='likendin.com'><img src='./linkedin-square-logo.jpg' alt='linkedin'/></a>
         <a href='github.com'><img src='./github.jpg' alt='github' /><p></p></a>
@@ -86,19 +128,26 @@ function App() {
         <div className='Skills' style={{display:'flex'}}>
         <div className='Skills-Content'>
             <img src='./logo192.png' />
-            <div style={{display:'flex'}}><p>REACT</p> <p style={{marginLeft:'70px'}}>35%</p></div>
+            <div style={{display:'flex'}}><p>REACT</p> <p style={{marginLeft:'70px'}}>25%</p></div>
             <input type='range' min='0' max='100' value='0' className='slider slider4'/>
           </div>
           <div className='Skills-Content'>
             <img src='./c.png' />
-            <div style={{display:'flex'}}><p>C</p> <p style={{marginLeft:'110px'}}>52%</p></div>
+            <div style={{display:'flex'}}><p>C</p> <p style={{marginLeft:'110px'}}>50%</p></div>
             <input type='range' min='0' max='100' value='0' className='slider slider5'/>
           </div>
           
         </div>
+        <h1 style={{color:'red'}}>Education</h1>
+        <div className='Skills' >
+        <div className='Skills-Content' style={{width:'880px'}}>
+            <div style={{display:'flex'}}><p>Sri Shakthi Insitute of Engineering and Technology</p> <p style={{marginLeft:'0px'}}>2022-2026  </p></div>
+            <p>B.E. Computer Science and Engineering</p>
+          </div>
+        </div>
         </div>
       </div>
-      </body>
+     
     </div>
   );
 }

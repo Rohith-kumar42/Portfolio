@@ -1,6 +1,22 @@
 .App {
   background-color: #000000;
 }
+ @keyframes fade-in {
+    40% {
+      color: red;
+    }
+    60% {
+      color: red;
+    }
+    80% {
+      color: red;
+      scroll: calc(80vh - 100%);
+    }
+    100% {
+      color: red;
+      scroll: calc(80vh - 100%);
+    }
+  } 
 body{
   background-color: #000000;
   
@@ -32,6 +48,7 @@ a {
   margin-right: 500px;
   padding-bottom: 30px;
 }
+
 .Nav-Content:first-child{
   padding-top: 100px;
 }
@@ -47,7 +64,7 @@ a {
 .profile-image {
   width: 150px;
   height: 150px;
-  border: 1px solid white;
+  border: 3px solid red;
   border-radius: 50%;
   padding-left:0px;
   margin-top: 60px;
@@ -63,40 +80,29 @@ padding-right: 100px;
   width: 40px;
   height: 40px;
   margin: 10px;
-  border: 1px solid white;
+  border: 3px solid red;
   border-radius: 50%;
   padding-left:0px;}
 
 
 
-  @keyframes fade-in {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
 .Project{
   margin-top: 50px;
-  border-right:1px solid red;
+  border-right: 1px solid red;
+  opacity: 0;
   width:580px;
   opacity: 1; 
-
 }
+
 .Project-Content{
   border: 1px solid white;
   padding: 20px;
   margin-bottom: 20px;
   width: 500px; /* Initially hidden */
   border-radius: 20px;
-  animation: fade-out 2s forwards;
-  animation-timeline:scroll() ;
+
 }
-.Project-Content:hover{
-  transform: scale(1.005) ;
-  transition: transform 0.5s;
-}
+
 .Project-Content:nth-child(even){
   margin-left: 630px;
 }
@@ -148,7 +154,7 @@ padding-right: 100px;
   width: 220px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 .slider1::-webkit-slider-thumb{
@@ -157,7 +163,7 @@ padding-right: 100px;
   width: 200px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 .slider2::-webkit-slider-thumb{
@@ -166,7 +172,7 @@ padding-right: 100px;
   width: 100px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 .slider3::-webkit-slider-thumb{
@@ -175,31 +181,40 @@ padding-right: 100px;
   width: 180px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 .slider4::-webkit-slider-thumb{
   -webkit-appearance: none;
   appearance: none;
-  width: 80px;
+  width: 60px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 .slider5::-webkit-slider-thumb{
   -webkit-appearance: none;
   appearance: none;
-  width: 130px;
+  width: 120px;
   height: 7px;
   border-radius: 20px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 7px;
-  background: #fc8019;
+  background: red;
   cursor: pointer;
+}
+.button-36{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 50px;
+  margin-left: 0px;
 }
