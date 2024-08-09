@@ -11,23 +11,12 @@ function App() {
       const scrollPercentage = (scrollTop / scrollHeight) * 100;
   
       // Get the Nav-Content elements
-      const resume=this.document.getElementsByClassName('button-36');
+      // const resume=this.document.getElementsByClassName('button-36');
       const navContent = document.querySelector('.Nav-Content a');
       const navContent1 = document.querySelector('.Nav-Content1 a');
       const navContent2 = document.querySelector('.Nav-Content2 a');
       const navContent3 = document.querySelector('.Nav-Content3 a');
-      // Remove the unused function declaration
-      //  navContent1.addEventListener('click', function() {
-      //  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      //   const scrollTo = (scrollHeight * 15) / 100;
-      //   window.scrollTo(0, scrollTo);
-      //  });
-      resume.addEventListener('click', function() {
-          const link = document.createElement('a');
-          link.href = './resume.pdf';
-          link.download = 'resume.pdf';
-          link.click();
-      });
+     
       // Change color based on scroll percentage
       if (scrollPercentage === 0 && scrollPercentage < 19) {
         navContent.style.color = 'red';
