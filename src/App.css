@@ -1,159 +1,163 @@
 .App {
   background-color: #000000;
   color: #000;
+
 }
- @keyframes fade-in {
-    40% {
-      color: red;
-    }
-    60% {
-      color: red;
-    }
-    80% {
-      color: red;
-      scroll: calc(80vh - 100%);
-    }
-    100% {
-      color: red;
-      scroll: calc(80vh - 100%);
-    }
-  } 
-body{
+body {
   background-color: #000000;
-  
 }
-:root{
---hover:red;
+
+:root {
+  --hover: red;
 }
 
 a {
   color: white;
   text-decoration: none;
 }
-.Nav-header{
- 
-  color:white;
+
+.Nav-header {
+  color: white;
   width: 150px;
-  border-right: 1px solid red;  
   height: 100%;
 }
-.Navmenu{
-  position: fixed;
-  margin-top: 150px;
-}
-.Nav-header ul{
-  list-style-type: none;
 
+.Navmenu {
+  border-right: 1px solid rgb(255, 0, 0);
+  position: fixed;
+  padding-top: 100px;
+  width: 150px;
+  height: 100vh;
 }
-.Nav-Content{
+
+.Nav-header ul {
+  list-style-type: none;
+}
+
+.Nav-Content {
   margin-right: 500px;
   padding-bottom: 30px;
 }
 
-.Nav-Content:first-child{
+.Nav-Content:first-child {
   padding-top: 100px;
 }
-.About-content {
 
+.About-content {
   color: white;
 }
-.Header{
-  margin-left: 200PX;
-  width: 700px;
-  margin-top: 0px;
+
+.Header {
+  margin-left: 190px;
+  width: 1200px;
+  
+}
+.Profile-Content{
+  display:'flex';
+  padding-right:120px;
+
+}
+.Profile-Content p{
+    width: 850px;
 }
 .profile-image {
   width: 150px;
   height: 150px;
   border: 3px solid red;
   border-radius: 50%;
-  padding-left:0px;
-  margin-top: 60px;
-  margin-left: 100px;
+  margin-left: 90px;
+  margin-top: 50px;
 }
 
 .ImageSection{
-height: 1em;
-padding-left: 0px;
-padding-right: 100px;
+  position: relative;
+ display: flex;
 }
-.ImageSection img{  
+
+.ImageSection img {
   width: 40px;
   height: 40px;
-  margin: 10px;
   border: 3px solid red;
   border-radius: 50%;
-  padding-left:0px;}
-
-
-
-.Project{
-  margin-top: 50px;
-  border-right: 1px solid red;
-  opacity: 0;
-  width:580px;
-  opacity: 1; 
+  margin-right: 10px;
 }
 
-.Project-Content{
+.Project {
+  border-right: 1px solid red;
+  width: 585px;
+  opacity: 1;
+}
+
+.Project-Content {
   border: 1px solid white;
   padding: 20px;
   margin-bottom: 20px;
   width: 500px; /* Initially hidden */
   border-radius: 20px;
-
 }
-.Project-Content:hover{
+
+.Project-Content:hover {
   border: 1px solid var(--hover);
   transition: border-left 0.5s;
   cursor: pointer;
 }
-.Project-Content:nth-child(even){
+
+.Project-Content:nth-child(even) {
   margin-left: 630px;
 }
+
 .Skills-Content{
   width: 500px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   margin-right: 100px;
-  padding-right: 70px;
+  padding-right: 180px;
   margin-bottom: 50px;
 }
-.Skills-Content:hover{
+
+.Skills-Content:hover {
   border: 1px solid var(--hover);
   transition: border-left 0.5s;
   cursor: pointer;
 }
-.Skills-Content p,img{
+.Education-Content:hover{
+  border: 1px solid var(--hover);
+  transition: border-left 0.5s;
+  cursor: pointer;
+}
+.Skills-Content p,
+.Skills-Content img {
   padding-left: 100px;
 }
 
-.Skills-Content img{
-  height:50px;
+.Skills-Content img {
+  height: 50px;
   width: 50px;
   padding-left: 0px;
   margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 0px;
   border: 1px solid rgb(165, 165, 165);
-
 }
-.Skills-Content input[type="range"]{
+
+.Skills-Content input[type="range"] {
   margin-left: 100px;
   margin-bottom: 50px;
 }
-.slider{
+
+.slider {
   -webkit-appearance: none;
   width: 250px;
   height: 7px;
   background: #d3d3d3;
   outline: none;
   opacity: 1;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
   border-radius: 20px;
 }
-.slider::-webkit-slider-thumb{
+
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 220px;
@@ -162,7 +166,8 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.slider1::-webkit-slider-thumb{
+
+.slider1::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 200px;
@@ -171,7 +176,8 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.slider2::-webkit-slider-thumb{
+
+.slider2::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 100px;
@@ -180,7 +186,8 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.slider3::-webkit-slider-thumb{
+
+.slider3::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 180px;
@@ -189,7 +196,8 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.slider4::-webkit-slider-thumb{
+
+.slider4::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 60px;
@@ -198,7 +206,8 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.slider5::-webkit-slider-thumb{
+
+.slider5::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 120px;
@@ -214,15 +223,150 @@ padding-right: 100px;
   background: red;
   cursor: pointer;
 }
-.button-36{
+
+.button-36 {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border: 3px solid rgb(255, 0, 0);
   padding: 10px;
   border-radius: 10px;
   margin: 50px;
+  margin-top: 0px;
   margin-left: 0px;
 }
-.ImageSection{
+
+.ImageSection {
   margin-left: 825px;
+}
+.Skills{
+  display: flex;
+}
+.Education-Content{
+  width: 980px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 100px;
+  padding-right: 70px;
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+.Year{
+  margin-left:550px
+}
+
+/* Code for screens with max width 768px and min width 440px */
+
+@media screen and (max-width: 768px) and (min-width: 440px) {
+  /* Add your CSS code specific to this screen size here */
+  .Header{
+    margin-left: 170px;
+    overflow-x: hidden;
+  }
+  .Project{
+    .Project-Content:nth-child(even) {
+      margin-left: 0px;
+    }
+  }
+  .Skills{
+    display: block;
+  
+  }
+  .Skills-Content{
+    width: 400px;
+  }
+  .Education-Content{
+    width: 380px;
+  }
+  .Navmenu {
+    height: 585vh;
+  }
+  
+  .Profile-Content p{
+    width: 390px;
+  }
+  .ImageSection{
+   display: flex;
+   margin-left: 200px;
+   position: relative;
+  }
+  .profile-image{
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .Institute{
+    margin-left: -40px;
+  }
+ .Year{
+  margin-left: 10px;
+ }
+ .Degree{
+  margin-left: -40px;
+ }
+  body{
+    width: 100px;
+  }
+}
+@media screen and (max-width: 380px){
+  .Navmenu{
+    display:none;
+  }
+  .Header{
+    margin-left: 10px;
+  }
+  .Profile-Content{
+    width: 360px;
+  }
+  .profile-image{
+    margin-top: 340px;
+    margin-left: -260px;
+  }
+  .Project{
+    .Project-Content:nth-child(even) {
+      margin-left: 0px;
+    }
+  }
+  .ImageSection{
+    margin-left: 100px;
+  }
+  .ImageSection img{
+    margin-right: 115px;
+  }
+  .button-36{
+    margin-left: 110px;
+  }
+  .Project-Content {
+    width: 300px;
+  }
+  .Skills{
+    display: block;
+  }
+  .Skills-Content{
+    width: 170px;
+  }
+  .Skills-Content img{
+    margin-left: 150px;
+  }
+  .Skills-Content p{
+    padding-left: 70px;
+  }
+  .Skills-Content input[type="range"]{
+    
+    margin-left: 50px;
+  }
+  .Education-Content{
+        width: 180px;
+  }
+  .Institute{
+    margin-left: -90px;
+    width: 290px;
+  }
+  .Year{
+    margin-left: -290px;
+    margin-top: 70px;
+  }
+  .Degree{
+    margin-left: -90px;
+    width: 290px;
+    margin-top: -05px;
+  }
 }
