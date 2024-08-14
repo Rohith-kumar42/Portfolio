@@ -1,7 +1,7 @@
 .App {
   background-color: #000000;
   color: #000;
-
+  width: 90%;
 }
 body {
   background-color: #000000;
@@ -55,10 +55,11 @@ a {
 .Profile-Content{
   display:'flex';
   padding-right:120px;
-
+  width: 850px;
+  margin-left: 270px;
 }
-.Profile-Content p{
-    width: 850px;
+.Profile-Content-Para{
+    width: max-content;
 }
 .profile-image {
   width: 150px;
@@ -86,8 +87,11 @@ a {
   border-right: 1px solid red;
   width: 585px;
   opacity: 1;
+  margin-left: 270px;
 }
-
+.ProjectSection{
+  margin-left: 270px;
+}
 .Project-Content {
   border: 1px solid white;
   padding: 20px;
@@ -180,7 +184,7 @@ a {
 .slider2::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 100px;
+  width: 80px;
   height: 7px;
   border-radius: 20px;
   background: red;
@@ -190,7 +194,7 @@ a {
 .slider3::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 180px;
+  width: 60px;
   height: 7px;
   border-radius: 20px;
   background: red;
@@ -200,7 +204,7 @@ a {
 .slider4::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 60px;
+  width: 100px;
   height: 7px;
   border-radius: 20px;
   background: red;
@@ -210,7 +214,7 @@ a {
 .slider5::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 120px;
+  width: 140px;
   height: 7px;
   border-radius: 20px;
   background: red;
@@ -239,7 +243,7 @@ a {
   margin-left: 825px;
 }
 .Skills{
-  display: flex;
+  display: block;
 }
 .Education-Content{
   width: 980px;
@@ -251,25 +255,34 @@ a {
   padding-left: 100px;
 }
 .Year{
-  margin-left:550px
+  margin-left:500px
+}
+.Project-Header{
+  color: red;
+  margin-left:270px ;
 }
 
 /* Code for screens with max width 768px and min width 440px */
 
 @media screen and (max-width: 768px) and (min-width: 440px) {
+  .App{
+   min-width: fit-content;
+  }
   /* Add your CSS code specific to this screen size here */
   .Header{
-    margin-left: 170px;
     overflow-x: hidden;
   }
   .Project{
-    .Project-Content:nth-child(even) {
-      margin-left: 0px;
-    }
+    margin-left: 170px;
   }
-  .Skills{
+  .Project-Content:nth-child(even) {
+    margin-left: 0px;
+  }
+  .Project-Header{
+    margin-left: 170px;
+  }
+  .SkillsSection{
     display: block;
-  
   }
   .Skills-Content{
     width: 400px;
@@ -280,9 +293,12 @@ a {
   .Navmenu {
     height: 585vh;
   }
-  
+  .Profile-Content{
+    margin-left: 170px;
+  }
   .Profile-Content p{
     width: 390px;
+  
   }
   .ImageSection{
    display: flex;
@@ -306,7 +322,7 @@ a {
     width: 100px;
   }
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 375px){
   .Navmenu{
     display:none;
   }
@@ -368,5 +384,45 @@ a {
     margin-left: -90px;
     width: 290px;
     margin-top: -05px;
+  }
+}
+.Skills-Content{
+  width: 350px;
+}
+.test{
+  margin-left: 270px;
+}
+/* Default styles for odd and even items on larger screens */
+.odd-item {
+  margin-left: 600px;
+  margin-top: -257px;
+  width: 10px;
+}
+.Education-Content{
+  width: 950px
+}
+.EducationSection{  
+  margin-left: 270px;     
+}
+@media screen and (max-width: 768px) and (min-width: 440px) {
+  .test{
+    margin-left: 220px;
+  }
+  .odd-item {
+    margin-left: -20px;
+    margin-top: 0;
+    width: 350px;
+  }
+  .even-item {
+    margin-left: -20px;
+    margin-top: 0;
+    width: auto;
+  }
+  .Education-Content{
+    margin-left: -80px;
+    width: 370px;
+  }
+  .Edu{
+   margin-left: -80px;
   }
 }
