@@ -47,6 +47,41 @@ function App() {
         navContent2.style.color = 'white';
         navContent.style.color = 'white'; // Reset color
     }
+    if (window.innerWidth <= 768 && window.innerWidth >= 440) {
+      // Calculate the scroll percentage
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+      // Get the Nav-Content elements
+      const navContent = document.querySelector('.Nav-Content a');
+      const navContent1 = document.querySelector('.Nav-Content1 a');
+      const navContent2 = document.querySelector('.Nav-Content2 a');
+      const navContent3 = document.querySelector('.Nav-Content3 a');
+
+      if (scrollPercentage === 0 && scrollPercentage < 19) {
+        navContent.style.color = 'red';
+        navContent1.style.color = 'white';
+      } 
+      if (scrollPercentage > 20) {
+        navContent1.style.color = 'red';
+        navContent.style.color = 'white';
+        navContent2.style.color = 'white';
+        navContent3.style.color = 'white';
+      } 
+
+      if (scrollPercentage < 2) {
+        navContent2.style.color = 'red';
+        navContent1.style.color = 'white';
+        navContent.style.color = 'white';
+      } 
+      if(scrollPercentage > 95){
+        navContent3.style.color = 'red';
+        navContent1.style.color = 'white';
+        navContent2.style.color = 'white';
+        navContent.style.color = 'white'; // Reset color
+      }
+    }
   }),
 
   
@@ -56,7 +91,7 @@ function App() {
           <ProfileContent />
           <SocialLinks />
           <a href="./resume.pdf" download="./resume.pdf">
-            <button className="button-36" style={{ marginTop: '20px',marginLeft: '270px',width: '150px' }}>Download Resume</button>
+            <button className="button-36">Download Resume</button>
           </a>
           <h1 className='Project-Header'>Projects</h1>
           <ProjectSection />

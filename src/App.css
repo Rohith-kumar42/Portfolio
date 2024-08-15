@@ -70,11 +70,6 @@ a {
   margin-top: 50px;
 }
 
-.ImageSection{
-  position: relative;
- display: flex;
-}
-
 .ImageSection img {
   width: 40px;
   height: 40px;
@@ -235,12 +230,16 @@ a {
   padding: 10px;
   border-radius: 10px;
   margin: 50px;
-  margin-top: 0px;
-  margin-left: 0px;
+   margin-top: 20px;
+   margin-left: 270px;
+   width: 150px 
 }
 
 .ImageSection {
-  margin-left: 825px;
+  margin-left: 270px;
+    position: relative;
+   display: flex;
+
 }
 .Skills{
   display: block;
@@ -261,9 +260,6 @@ a {
   color: red;
   margin-left:270px ;
 }
-
-/* Code for screens with max width 768px and min width 440px */
-
 @media screen and (max-width: 768px) and (min-width: 440px) {
   .App{
    min-width: fit-content;
@@ -274,9 +270,13 @@ a {
   }
   .Project{
     margin-left: 170px;
+    width: 560px;
   }
   .Project-Content:nth-child(even) {
-    margin-left: 0px;
+    margin-left: 580px;
+  }
+  .Project-Content{
+    width: 490px;
   }
   .Project-Header{
     margin-left: 170px;
@@ -297,12 +297,12 @@ a {
     margin-left: 170px;
   }
   .Profile-Content p{
-    width: 390px;
+    width: 790px;
   
   }
   .ImageSection{
    display: flex;
-   margin-left: 200px;
+   margin-left: 170px;
    position: relative;
   }
   .profile-image{
@@ -321,78 +321,17 @@ a {
   body{
     width: 100px;
   }
-}
-@media screen and (max-width: 375px){
-  .Navmenu{
-    display:none;
-  }
-  .Header{
-    margin-left: 10px;
-  }
-  .Profile-Content{
-    width: 360px;
-  }
-  .profile-image{
-    margin-top: 340px;
-    margin-left: -260px;
-  }
-  .Project{
-    .Project-Content:nth-child(even) {
-      margin-left: 0px;
-    }
-  }
-  .ImageSection{
-    margin-left: 100px;
-  }
-  .ImageSection img{
-    margin-right: 115px;
-  }
   .button-36{
-    margin-left: 110px;
-  }
-  .Project-Content {
-    width: 300px;
-  }
-  .Skills{
-    display: block;
-  }
-  .Skills-Content{
-    width: 170px;
-  }
-  .Skills-Content img{
-    margin-left: 150px;
-  }
-  .Skills-Content p{
-    padding-left: 70px;
-  }
-  .Skills-Content input[type="range"]{
-    
-    margin-left: 50px;
-  }
-  .Education-Content{
-        width: 180px;
-  }
-  .Institute{
-    margin-left: -90px;
-    width: 290px;
-  }
-  .Year{
-    margin-left: -290px;
-    margin-top: 70px;
-  }
-  .Degree{
-    margin-left: -90px;
-    width: 290px;
-    margin-top: -05px;
+    margin-left: 170px;
   }
 }
+
 .Skills-Content{
   width: 350px;
 }
 .test{
   margin-left: 270px;
 }
-/* Default styles for odd and even items on larger screens */
 .odd-item {
   margin-left: 600px;
   margin-top: -257px;
@@ -404,9 +343,113 @@ a {
 .EducationSection{  
   margin-left: 270px;     
 }
+
 @media screen and (max-width: 768px) and (min-width: 440px) {
   .test{
-    margin-left: 220px;
+    margin-left: 170px;
+  }
+   .odd-item {
+    margin-left: 570px;
+    width: 350px;
+  }
+
+  .even-item {
+    margin-left: 20px;
+    margin-top: 0;
+    width: auto;
+  } 
+  .Education-Content{
+    margin-left: -80px;
+    width: 900px;
+  }
+  .Edu{
+   margin-left: -80px;
+  }
+  .Year{
+    margin-left: 550px;
+  }
+}
+@media screen and (max-width: 320px){
+  .App{
+   overflow-x: hidden;
+  }
+  .Navmenu{
+    display:none;
+  }
+  .Header{
+    margin-left: 10px;
+  }
+  .Profile-Content{
+    width: 270px;
+    margin-left: 10px;
+  }
+  .profile-image{
+    margin-top: 420px;
+    margin-left: -200px;
+  }
+  .Project{
+    margin-left: 10px;
+    .Project-Content:nth-child(even) {
+      margin-left: 0px;
+    }
+  }
+  .ImageSection{
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  .ImageSection img{
+    margin-right: 55px;
+  }
+  .button-36{
+    margin-left: 80px;
+  }
+  .Project-Content {
+    width: 230px;
+  }
+  .SkillsHeader{
+    margin-left: -260px;
+  }
+  .SkillsSection{
+    display: block;
+    margin-left: 0px;
+  }
+  .Skills-Content{
+    width: 96px;
+    margin-left: -250px;
+  }
+  .Skills-Content img{
+    margin-left: 110px;
+  }
+  .Skills-Content p{
+    padding-left: 40px;
+  }
+  .Skills-Content input[type="range"]{
+    
+    margin-left: 10px;
+  }
+
+  .EducationSection{
+    margin-left: 20px;
+    width: 300px;
+  }
+  .Project-Header{
+    margin-left: 20px;
+  }
+  .Institute{
+    margin-left: -90px;
+    width: 240px;
+  }
+  .Year{
+    margin-left: -240px;
+    margin-top: 70px;
+  }
+  .Degree{
+    margin-left: -90px;
+    width: 190px;
+    margin-top: -05px;
+  }
+  .test{
+    margin-left: 280px;
   }
   .odd-item {
     margin-left: -20px;
@@ -419,10 +462,10 @@ a {
     width: auto;
   }
   .Education-Content{
-    margin-left: -80px;
-    width: 370px;
+    margin-left: -10px;
+    width: 105px;
   }
   .Edu{
-   margin-left: -80px;
+   margin-left: -10px;
   }
 }

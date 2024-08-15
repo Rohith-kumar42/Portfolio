@@ -13,7 +13,7 @@ function SkillsSection() {
 
   return (
     <div className='test'>
-      <h1 style={{ color: 'red' }}>Skills</h1>
+      <h1 style={{ color: 'red' }} className='SkillsHeader'>Skills</h1>
       <div className='SkillsSection'>
         {obj.map((i, index) => {
           const className = index % 2 === 1 ? 'odd-item' : 'even-item';

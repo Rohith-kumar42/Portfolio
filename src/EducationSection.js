@@ -7,7 +7,7 @@ function EducationSection() {
       <h1 style={{ color: 'red' }}className='Edu'>Education</h1>
       <div className='Education'>
         <div className='Education-Content'>
-          <div style={{ display: 'flex', width: '1000px' }}>
+          <div style={{ display: 'flex'}}>
             <p className='Institute'>Sri Shakthi Institute of Engineering and Technology</p>
             <p className='Year'>2022-2026</p>
           </div>
