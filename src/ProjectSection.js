@@ -15,7 +15,7 @@ function ProjectSection() {
   const gitLinks = [
     "https://github.com/Rohith-kumar42/Souled",
     "https://github.com/Rohith-kumar42/Gamercult",
-    "https://github.com/Rohith-kumar42/Contact-Front-End",
+    "https://github.com/Rohith-kumar42/Pharmacy-Management",
     "https://github.com/Rohith-kumar42/Invoice-Generator"
   ]
 
