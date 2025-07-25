@@ -1,7 +1,7 @@
 .App {
   background-color: #000000;
   color: #000;
-  display: flex;
+  width: 90%;
 }
 body {
   background-color: #000000;
@@ -18,17 +18,16 @@ a {
 
 .Nav-header {
   color: white;
-  flex: 1;
-  padding: 20px;
+  width: 150px;
+  height: 100%;
 }
 
 .Navmenu {
   border-right: 1px solid rgb(255, 0, 0);
+  position: fixed;
   padding-top: 100px;
   width: 150px;
   height: 100vh;
-  position: sticky;
-  top: 0;
 }
 
 .Nav-header ul {
@@ -36,6 +35,7 @@ a {
 }
 
 .Nav-Content {
+  margin-right: 500px;
   padding-bottom: 30px;
 }
 
@@ -48,13 +48,15 @@ a {
 }
 
 .Header {
-  width: 100%;
+  margin-left: 190px;
+  width: 1200px;
+  
 }
 .Profile-Content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  display:'flex';
+  padding-right:120px;
+  width: 850px;
+  margin-left: 270px;
 }
 .Profile-Content-Para{
     width: max-content;
@@ -64,6 +66,7 @@ a {
   height: 150px;
   border: 3px solid red;
   border-radius: 50%;
+  margin-left: 90px;
   margin-top: 50px;
 }
 
@@ -77,18 +80,18 @@ a {
 
 .Project {
   border-right: 1px solid red;
-  width: 100%;
+  width: 585px;
   opacity: 1;
+  margin-left: 270px;
 }
 .ProjectSection{
-  width: 100%;
+  margin-left: 270px;
 }
 .Project-Content {
   border: 1px solid white;
   padding: 20px;
   margin-bottom: 20px;
-  width: 80%; /* Initially hidden */
-  max-width: 500px;
+  width: 500px; /* Initially hidden */
   border-radius: 20px;
 }
 
@@ -99,14 +102,15 @@ a {
 }
 
 .Project-Content:nth-child(even) {
-  align-self: flex-end;
+  margin-left: 630px;
 }
 
 .Skills-Content{
-  width: 80%;
-  max-width: 500px;
+  width: 500px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
+  margin-right: 100px;
+  padding-right: 180px;
   margin-bottom: 50px;
 }
 
@@ -122,20 +126,22 @@ a {
 }
 .Skills-Content p,
 .Skills-Content img {
-  padding-left: 20px;
+  padding-left: 100px;
 }
 
 .Skills-Content img {
   height: 50px;
   width: 50px;
-  margin: 30px auto 0;
-  display: block;
+  padding-left: 0px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   border: 1px solid rgb(165, 165, 165);
 }
 
 .Skills-Content input[type="range"] {
-  margin: 0 auto 50px;
-  display: block;
+  margin-left: 100px;
+  margin-bottom: 50px;
 }
 
 .slider {
@@ -223,97 +229,243 @@ a {
   border: 3px solid rgb(255, 0, 0);
   padding: 10px;
   border-radius: 10px;
-  margin: 20px auto 50px;
-  display: block;
-  width: 150px;
+  margin: 50px;
+   margin-top: 20px;
+   margin-left: 270px;
+   width: 150px 
 }
 
 .ImageSection {
-  position: relative;
-  display: flex;
-  justify-content: center;
+  margin-left: 270px;
+    position: relative;
+   display: flex;
+
 }
 .Skills{
   display: block;
 }
 .Education-Content{
-  width: 80%;
-  max-width: 980px;
+  width: 980px;
   border: 1px solid white;
   border-radius: 5px;
-  margin: 0 auto 50px;
-  padding: 20px;
+  margin-right: 100px;
+  padding-right: 70px;
+  margin-bottom: 50px;
+  padding-left: 100px;
 }
 .Year{
-  text-align: right;
+  margin-left:500px
 }
 .Project-Header{
   color: red;
-  text-align: center;
+  margin-left:270px ;
 }
-@media screen and (max-width: 768px) {
-  .Navmenu {
-    display: none;
+@media screen and (max-width: 768px) and (min-width: 440px) {
+  .App{
+   min-width: fit-content;
   }
-
+  /* Add your CSS code specific to this screen size here */
+  .Header{
+    overflow-x: hidden;
+  }
+  .Project{
+    margin-left: 170px;
+    width: 560px;
+  }
   .Project-Content:nth-child(even) {
-    align-self: center;
+    margin-left: 580px;
   }
-
-  .odd-item, .even-item {
-    margin: 0;
-    width: 100%;
+  .Project-Content{
+    width: 490px;
   }
-
-  .Year {
-    margin-left: 0;
-    margin-top: 10px;
+  .Project-Header{
+    margin-left: 170px;
   }
-
-  .Institute, .Degree {
-    margin-left: 0;
-    width: 100%;
+  .SkillsSection{
+    display: block;
+  }
+  .Skills-Content{
+    width: 400px;
+  }
+  .Education-Content{
+    width: 380px;
+  }
+  .Navmenu {
+    height: 585vh;
+  }
+  .Profile-Content{
+    margin-left: 170px;
+  }
+  .Profile-Content p{
+    width: 790px;
+  
+  }
+  .ImageSection{
+   display: flex;
+   margin-left: 170px;
+   position: relative;
+  }
+  .profile-image{
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .Institute{
+    margin-left: -40px;
+  }
+ .Year{
+  margin-left: 10px;
+ }
+ .Degree{
+  margin-left: -40px;
+ }
+  body{
+    width: 100px;
+  }
+  .button-36{
+    margin-left: 170px;
   }
 }
 
-@media screen and (max-width: 440px) {
-  .Profile-Content {
-    width: 100%;
+.Skills-Content{
+  width: 350px;
+}
+.test{
+  margin-left: 270px;
+}
+.odd-item {
+  margin-left: 600px;
+  margin-top: -257px;
+  width: 10px;
+}
+.Education-Content{
+  width: 950px
+}
+.EducationSection{  
+  margin-left: 270px;     
+}
+
+@media screen and (max-width: 768px) and (min-width: 440px) {
+  .test{
+    margin-left: 170px;
+  }
+   .odd-item {
+    margin-left: 570px;
+    width: 350px;
   }
 
-  .profile-image {
+  .even-item {
+    margin-left: 20px;
+    margin-top: 0;
+    width: auto;
+  } 
+  .Education-Content{
+    margin-left: -80px;
+    width: 900px;
+  }
+  .Edu{
+   margin-left: -80px;
+  }
+  .Year{
+    margin-left: 550px;
+  }
+}
+@media screen and (max-width: 320px){
+  .App{
+   overflow-x: hidden;
+  }
+  .Navmenu{
+    display:none;
+  }
+  .Header{
+    margin-left: 10px;
+  }
+  .Profile-Content{
+    width: 270px;
+    margin-left: 10px;
+  }
+  .profile-image{
+    margin-top: 420px;
+    margin-left: -200px;
+  }
+  .Project{
+    margin-left: 10px;
+    .Project-Content:nth-child(even) {
+      margin-left: 0px;
+    }
+  }
+  .ImageSection{
+    margin-left: 35px;
     margin-top: 20px;
   }
-
+  .ImageSection img{
+    margin-right: 55px;
+  }
+  .button-36{
+    margin-left: 80px;
+  }
   .Project-Content {
-    width: 90%;
+    width: 230px;
   }
-
-  .Skills-Content {
-    width: 90%;
+  .SkillsHeader{
+    margin-left: -260px;
   }
-
-  .Education-Content {
-    width: 90%;
+  .SkillsSection{
+    display: block;
+    margin-left: 0px;
   }
-
-  .ImageSection img {
-    margin-right: 10px;
+  .Skills-Content{
+    width: 96px;
+    margin-left: -250px;
   }
-
-  .button-36 {
-    width: 120px;
+  .Skills-Content img{
+    margin-left: 110px;
   }
-
-  .Skills-Content img {
-    margin-left: 0;
+  .Skills-Content p{
+    padding-left: 40px;
   }
-
-  .Skills-Content p {
-    padding-left: 10px;
-  }
-
-  .Skills-Content input[type="range"] {
+  .Skills-Content input[type="range"]{
+    
     margin-left: 10px;
+  }
+
+  .EducationSection{
+    margin-left: 20px;
+    width: 300px;
+  }
+  .Project-Header{
+    margin-left: 20px;
+  }
+  .Institute{
+    margin-left: -90px;
+    width: 240px;
+  }
+  .Year{
+    margin-left: -240px;
+    margin-top: 70px;
+  }
+  .Degree{
+    margin-left: -90px;
+    width: 190px;
+    margin-top: -05px;
+  }
+  .test{
+    margin-left: 280px;
+  }
+  .odd-item {
+    margin-left: -20px;
+    margin-top: 0;
+    width: 350px;
+  }
+  .even-item {
+    margin-left: -20px;
+    margin-top: 0;
+    width: auto;
+  }
+  .Education-Content{
+    margin-left: -10px;
+    width: 105px;
+  }
+  .Edu{
+   margin-left: -10px;
   }
 }
