@@ -13,7 +13,7 @@ function ProfileContent() {
         His philosophy is to do what you love and build your career in the field of your interest.
       </p>
       <a href='https://github.com/Rohith-kumar42' className='Profilephoto'>
-        <img src="./photo.jpeg" alt="Profile" className="profile-image" />
+        <img src="./photo.jpg" alt="Profile" className="profile-image" />
       </a>
     </div>
   );
