@@ -7,7 +7,7 @@ function SkillsSection() {
     { image: "./css.png", name: "CSS", percentage: "80%", range: 0, className: "slider1" },
     { image: "./js.png", name: "JavaScript", percentage: "30%", range: 0, className: "slider2" },
     { image: "./logo192.png", name: "React", percentage: "25%", range: 0, className: "slider3" },
-    { image: "./c.png", name: "C", percentage: "40%", range: 0, className: "slider4" },
+    { image: "./java.png", name: "Java", percentage: "60%", range: 0, className: "slider4" },
     { image: "./figma.png", name: "Figma", percentage: "60%", range: 0, className: "slider5" }
   ];
 

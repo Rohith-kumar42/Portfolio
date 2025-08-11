@@ -8,7 +8,7 @@ function ProjectSection() {
   const obj = [
     {title: "Souled", text: "The jersey and boots purchasing website allows users to browse and buy sports apparel. It features user authentication for secure accounts, an intuitive interface with HTML and CSS, and PHP for handling transactions and managing inventory."},
     {title: "Gamercult", text: "The game purchase website includes user authentication and OTP verification. Users register, log in, and manage profiles with HTML, CSS, and PHP."},
-    {title: "Pharmacy Management", text: "Developed a website for managing pharmacy. Leveraged HTML5, CSS3,JS and PHP to create a responsive design and an intuitive user interface ."},
+    {title: "Pharmacy Management", text: "Developed a website for managing pharmacy.Implemented  stock management, billing system, and real time inventory updates with secure user authentication"},
     {title: "Invoice Generator", text: "The basic invoice generator uses HTML for structure, CSS for styling, and JavaScript for dynamic functionality. Users can input item details, quantities, and prices to automatically generate and display an invoice with calculated totals and formatting."}
   ];
 
