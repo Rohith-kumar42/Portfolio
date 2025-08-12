@@ -9,6 +9,7 @@ function NavMenu() {
         <li className='Nav-Content Nav-Content1'><a href='skills.html'>Project</a></li>
         <li className='Nav-Content Nav-Content2'><a href='skills.html'>Skills</a></li>
         <li className='Nav-Content Nav-Content3'><a href='education.html'>Education</a></li>
+        <li className='Nav-Content Nav-Content4'><a href='education.html'>Contact</a></li>
       </ul>
     </div>
   );

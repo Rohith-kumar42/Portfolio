@@ -353,7 +353,6 @@ a {
   .App{
    min-width: fit-content;
   }
-  /* Add your CSS code specific to this screen size here */
   .Header{
     overflow-x: hidden;
   }
