@@ -8,6 +8,7 @@ import SocialLinks from './SocialLinks';
 import ProjectSection from './ProjectSection';
 import SkillsSection from './SkillsSection';
 import EducationSection from './EducationSection';
+import ContactForm from './contactform';
 function App() {
   return (
       
@@ -97,6 +98,8 @@ function App() {
           <ProjectSection />
           <SkillsSection />
           <EducationSection />
+          <h1 className='Contact-Header'>Contact</h1>
+          <ContactForm />
         </div>
       </div>
     );

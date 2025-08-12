@@ -261,7 +261,95 @@ a {
   color: red;
   margin-left:270px ;
 }
+
+.Contact-Header{
+  color: red;
+  margin-left: 270px;
+}
+.Contact-Header{
+  margin-left: 270px;
+}
+.contact-form-container {
+  background-color: #000;
+  color: white;
+  width:980px;
+  margin-left: 270px;
+}
+
+.contact-form-container h2 {
+  color: red;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  color: red;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #111;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form input:hover,
+.contact-form textarea:hover{
+  border: 1px solid rgb(255, 0, 0);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid rgb(255, 0, 0);
+}
+.contact-form button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 150px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: darkred;
+}
+
+.status-message {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .contact-form-container {
+    padding: 1rem;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) and (min-width: 440px) {
+  .contact-form-container {
+    margin-left: 170px;
+    width: calc(100% - 180px);
+  }
   .App{
    min-width: fit-content;
   }
@@ -371,6 +459,10 @@ a {
   }
 }
 @media screen and (max-width: 320px){
+  .contact-form-container {
+    margin-left: 10px;
+    width: calc(100% - 20px);
+  }
   .App{
    overflow-x: hidden;
   }
